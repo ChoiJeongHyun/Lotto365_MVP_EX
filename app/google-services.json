@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "327693603200",
+    "firebase_url": "https://lotto365-mvp.firebaseio.com",
+    "project_id": "lotto365-mvp",
+    "storage_bucket": "lotto365-mvp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327693603200:android:8f302db83f7ffa63323165",
+        "android_client_info": {
+          "package_name": "kr.co.factoryx.lotto365_mvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327693603200-l2ltj69q0jjpb4r0c5o8arll8rridccr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyF_TbMiCsv8l_cknJ8BtmNnHoBqByuJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327693603200-l2ltj69q0jjpb4r0c5o8arll8rridccr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
