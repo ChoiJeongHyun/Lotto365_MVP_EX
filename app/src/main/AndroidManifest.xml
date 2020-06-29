@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name="kr.co.factoryx.lotto365.commonset.components.LottoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -40,6 +41,15 @@
             android:name=".Views.p3_GenerateNumber.Activity.Random.RandomGenerateActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".Views.p3_GenerateNumber.Activity.Random.RandomNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".Views.p4_HistoryNumber.Activity.HistoryNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
 
         <service
             android:name=".MiniFrameWork.FCM.MessagingService"

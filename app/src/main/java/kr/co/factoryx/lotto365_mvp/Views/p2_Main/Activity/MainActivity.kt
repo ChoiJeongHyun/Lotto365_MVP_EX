@@ -14,6 +14,7 @@ import kr.co.factoryx.lotto365_mvp.Views.In_Common.Adapter.ListPageAdapter
 import kr.co.factoryx.lotto365_mvp.Views.p2_Main.Contract.MainContract
 import kr.co.factoryx.lotto365_mvp.Views.p2_Main.Presenter.MainPresenter
 import kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Activity.GenerateActivity
+import kr.co.factoryx.lotto365_mvp.Views.p4_HistoryNumber.Activity.HistoryNumberActivity
 import kr.co.factoryx.lotto365_mvp.Widgets.OnItemClickListener
 import kr.co.factoryx.lotto365_mvp.Widgets.ToolBar
 
@@ -68,9 +69,8 @@ class MainActivity : LottoActivity(), MainContract.View, ToolBar.OnToolBarClickL
 
     override fun onItemClick(recyclerView: RecyclerView, view: View, position: Int) {
         when (position) {
-            0 -> {
-                sendAction(GenerateActivity::class.java)
-            }
+            0 -> sendAction(GenerateActivity::class.java)
+            1 -> sendAction(HistoryNumberActivity::class.java)
             2 -> requestPermissions(C.RequestCode.CAMERA, android.Manifest.permission.CAMERA)
         }
     }

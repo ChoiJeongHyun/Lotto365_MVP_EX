@@ -18,4 +18,9 @@ class C {
         const val CAMERA = 200
     }
 
+    object Popup {
+        const val LEFT = 0
+        const val RIGHT = 1;
+    }
+
 }

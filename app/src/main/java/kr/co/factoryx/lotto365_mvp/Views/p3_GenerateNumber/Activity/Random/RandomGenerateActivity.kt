@@ -2,19 +2,29 @@ package kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Activity.Random
 
 import android.os.Bundle
 import android.view.View
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_random_generate.*
 import kr.co.factoryx.lotto365.commonset.components.LottoActivity
+import kr.co.factoryx.lotto365.commonset.components.abspopupview.PopupView
 import kr.co.factoryx.lotto365_mvp.Common.commonset.C
 import kr.co.factoryx.lotto365_mvp.R
+import kr.co.factoryx.lotto365_mvp.Utils.PLog
 import kr.co.factoryx.lotto365_mvp.Utils.Utils
+import kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Adapter.FixedAndExceptAdapter
 import kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Contract.RandomGenerateContract
+import kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Popup.NumberPopup
 import kr.co.factoryx.lotto365_mvp.Views.p3_GenerateNumber.Presenter.RandomGeneratePresenter
+import kr.co.factoryx.lotto365_mvp.Widgets.OnItemClickListener
+import kr.co.factoryx.lotto365_mvp.Widgets.OnPopupClickListener
 import kr.co.factoryx.lotto365_mvp.Widgets.ToolBar
 
 class RandomGenerateActivity : RandomGenerateContract.View, LottoActivity(),
-    ToolBar.OnToolBarClickListener, View.OnClickListener {
+    ToolBar.OnToolBarClickListener, OnPopupClickListener {
 
     private lateinit var presenter: RandomGeneratePresenter
+    private lateinit var fixedAdapter: FixedAndExceptAdapter
+    private lateinit var exceptAdapter: FixedAndExceptAdapter
 
     override fun initPresenter() {
         presenter = RandomGeneratePresenter()
@@ -26,6 +36,7 @@ class RandomGenerateActivity : RandomGenerateContract.View, LottoActivity(),
         Utils.loadAdView(view_random_generate_adView)
 
         presenter.setView(this)
+        presenter.setDataSource(this)
 
         viewInit()
         setData()
@@ -43,14 +54,38 @@ class RandomGenerateActivity : RandomGenerateContract.View, LottoActivity(),
         view_random_generate_group_fixed_number.setAlWaysMyTouch(true)
         view_random_generate_group_except_number.setAlWaysMyTouch(true)
 
+        view_random_generate_except_number_listView.layoutManager = GridLayoutManager(this, 6)
+        view_random_generate_fixed_number_listView.layoutManager = GridLayoutManager(this, 6)
+        fixedAdapter = FixedAndExceptAdapter(this)
+        exceptAdapter = FixedAndExceptAdapter(this)
+
+        presenter.setAdaptersModel(fixedAdapter, exceptAdapter)
+        presenter.setAdaptersView(fixedAdapter, exceptAdapter)
+
+        view_random_generate_fixed_number_listView.adapter = this.fixedAdapter
+        view_random_generate_except_number_listView.adapter = this.exceptAdapter
     }
 
     override fun setData() {
         super.setData()
+
+        presenter.setItems()
     }
 
     override fun onClick(v: View?) {
         super.onClick(v)
+        when (v) {
+            view_random_generate_group_fixed_number -> {
+                showPopup("고정번호", true)
+            }
+            view_random_generate_group_except_number -> {
+                showPopup("제외번호", false)
+            }
+            view_random_generate_btn_generate_number -> {
+                sendAction(RandomNumberActivity::class.java)
+            }
+
+        }
     }
 
     override fun onToolBarClick(tag: Any?, view: View?) {
@@ -63,5 +98,16 @@ class RandomGenerateActivity : RandomGenerateContract.View, LottoActivity(),
         super.onDestroy()
         presenter.releaseView()
     }
+
+    private fun showPopup(s: String, b: Boolean) {
+        NumberPopup(this).setTitle(s).setFixed(b).setPresenter(presenter).setOnPopupClickListener(this).show()
+    }
+
+    override fun onPopupClick(view: PopupView?, position: Int, item: Any?) {
+        if (position == C.Popup.RIGHT) {
+            presenter.setItems()
+        }
+    }
+
 
 }

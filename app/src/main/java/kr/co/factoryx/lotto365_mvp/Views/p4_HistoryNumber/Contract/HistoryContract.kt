@@ -1,13 +1,15 @@
-package kr.co.factoryx.lotto365_mvp.Views.p2_Main.Contract
+package kr.co.factoryx.lotto365_mvp.Views.p4_HistoryNumber.Contract
 
 import android.content.Context
 import kr.co.factoryx.lotto365_mvp.BaseContract
+import kr.co.factoryx.lotto365_mvp.MiniFrameWork.DataBase.Entity.History
 import kr.co.factoryx.lotto365_mvp.Views.In_Common.Adapter.Contract.ListPageAdapterContract
+import kr.co.factoryx.lotto365_mvp.Views.p4_HistoryNumber.Adapter.Contract.HistoryNumberAdapterContract
 
-interface MainContract {
+interface HistoryContract {
 
     interface View : BaseContract.View {
-
+        fun showingMsg(arrays : ArrayList<History>)
     }
 
     interface Presenter : BaseContract.Presenter<View> {
@@ -23,9 +25,9 @@ interface MainContract {
 
         }
 
-        fun setListAdapterModel(model: ListPageAdapterContract.Model)
+        fun setListAdapterModel(model: HistoryNumberAdapterContract.Model)
 
-        fun setListAdapterView(view: ListPageAdapterContract.View)
+        fun setListAdapterView(view: HistoryNumberAdapterContract.View)
 
         fun setItems()
 

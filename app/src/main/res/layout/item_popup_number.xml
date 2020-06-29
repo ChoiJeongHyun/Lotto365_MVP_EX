@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="6dp">
+
+        <kr.co.factoryx.lotto365_mvp.Widgets.CircleImageView
+            android:id="@+id/item_view_circle_popup_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#338B95A1"/>
+
+        <TextView
+            android:id="@+id/item_view_text_number_popup_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8B95A1"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

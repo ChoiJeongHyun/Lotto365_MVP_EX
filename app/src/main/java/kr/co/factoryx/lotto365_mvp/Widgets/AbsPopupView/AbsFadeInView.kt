@@ -66,7 +66,7 @@ abstract class AbsFadeInView(private val context: Context) : PopupView, View.OnC
 
     fun getContentView() = contentView
 
-    fun setData() {}
+    open fun setData() {}
 
     fun preAnimation() {}
 
