@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "327693603200",
-    "firebase_url": "https://lotto365-mvp.firebaseio.com",
-    "project_id": "lotto365-mvp",
-    "storage_bucket": "lotto365-mvp.appspot.com"
+    "project_number": "615683417397",
+    "firebase_url": "https://lotto365-mvp-bb681.firebaseio.com",
+    "project_id": "lotto365-mvp-bb681",
+    "storage_bucket": "lotto365-mvp-bb681.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:327693603200:android:8f302db83f7ffa63323165",
+        "mobilesdk_app_id": "1:615683417397:android:a39431c75516d5e82c987c",
         "android_client_info": {
-          "package_name": "kr.co.factoryx.lotto365_mvp"
+          "package_name": "kr.co.example.lotto365_mvp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "327693603200-l2ltj69q0jjpb4r0c5o8arll8rridccr.apps.googleusercontent.com",
+          "client_id": "615683417397-uf3i9i0r6hk6525g8p5bh7353jv8tv1m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCyF_TbMiCsv8l_cknJ8BtmNnHoBqByuJI"
+          "current_key": "AIzaSyBI4XnSjLwLGbBifTO8su10k1UKOjOrKmg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "327693603200-l2ltj69q0jjpb4r0c5o8arll8rridccr.apps.googleusercontent.com",
+              "client_id": "615683417397-uf3i9i0r6hk6525g8p5bh7353jv8tv1m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

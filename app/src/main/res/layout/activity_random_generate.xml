@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_color">
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.ToolBar
+    <kr.co.example.lotto365_mvp.Widgets.ToolBar
         android:id="@+id/view_random_generate_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbarHeight"
@@ -37,7 +37,7 @@
             android:layout_height="match_parent">
 
 
-            <kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout
+            <kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout
                 android:id="@+id/view_random_generate_group_fixed_number"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -65,10 +65,10 @@
                     android:layout_height="match_parent"
                     android:layout_toRightOf="@id/view_random_generate_view1" />
 
-            </kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout>
+            </kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout>
 
 
-            <kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout
+            <kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout
                 android:id="@+id/view_random_generate_group_except_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,10 +99,10 @@
                     android:layout_toRightOf="@id/view_random_generate_view2" />
 
 
-            </kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout>
+            </kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout>
 
 
-            <kr.co.factoryx.lotto365_mvp.Widgets.RoundButton
+            <kr.co.example.lotto365_mvp.Widgets.RoundButton
                 android:id="@+id/view_random_generate_btn_generate_number"
                 android:layout_width="250dp"
                 android:layout_height="54dp"

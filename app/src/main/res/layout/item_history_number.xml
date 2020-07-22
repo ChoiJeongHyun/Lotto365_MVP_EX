@@ -15,7 +15,7 @@
         android:textColor="#FFF"
         android:textSize="16dp" />
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout
+    <kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_marginLeft="16dp"
@@ -26,7 +26,7 @@
         app:backgroundColor="@color/box_background_color"
         app:cornerRadius="8dp">
 
-        <kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout
+        <kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout
             android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
@@ -44,9 +44,9 @@
                 android:gravity="center"
                 android:textStyle="bold"/>
 
-        </kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout>
+        </kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout>
 
-        <kr.co.factoryx.lotto365_mvp.Widgets.RoundButton
+        <kr.co.example.lotto365_mvp.Widgets.RoundButton
             android:id="@+id/item_view_btn_history_number"
             android:layout_width="76dp"
             android:layout_height="36dp"
@@ -134,6 +134,6 @@
         </LinearLayout>
 
 
-    </kr.co.factoryx.lotto365_mvp.Widgets.RoundRelativeLayout>
+    </kr.co.example.lotto365_mvp.Widgets.RoundRelativeLayout>
 
 </RelativeLayout>

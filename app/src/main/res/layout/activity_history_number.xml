@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background_color">
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.ToolBar
+    <kr.co.example.lotto365_mvp.Widgets.ToolBar
         android:id="@+id/view_history_number_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbarHeight"
@@ -45,7 +45,7 @@
         android:layout_above="@id/view_history_number_btn_clear_number"/>
 
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.RoundButton
+    <kr.co.example.lotto365_mvp.Widgets.RoundButton
         android:id="@+id/view_history_number_btn_clear_number"
         android:layout_width="250dp"
         android:layout_height="54dp"

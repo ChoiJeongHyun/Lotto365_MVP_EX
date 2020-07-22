@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.co.factoryx.lotto365_mvp">
+    package="kr.co.example.lotto365_mvp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="kr.co.factoryx.lotto365.commonset.components.LottoApplication"
+        android:name="kr.co.example.lotto365.commonset.components.LottoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,7 +19,7 @@
             android:value="@string/admob_app_id" />
 
 
-        <activity android:name=".Views.p1_Splash.Activity.SplashActivity">
+        <activity android:name="kr.co.example.lotto365_mvp.Views.p1_Splash.Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,31 +28,31 @@
         </activity>
 
         <activity
-            android:name=".Views.p2_Main.Activity.MainActivity"
+            android:name="kr.co.example.lotto365_mvp.Views.p2_Main.Activity.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".Views.p3_GenerateNumber.Activity.GenerateActivity"
+            android:name="kr.co.example.lotto365_mvp.Views.p3_GenerateNumber.Activity.GenerateActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".Views.p3_GenerateNumber.Activity.Random.RandomGenerateActivity"
+            android:name="kr.co.example.lotto365_mvp.Views.p3_GenerateNumber.Activity.Random.RandomGenerateActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".Views.p3_GenerateNumber.Activity.Random.RandomNumberActivity"
+            android:name="kr.co.example.lotto365_mvp.Views.p3_GenerateNumber.Activity.Random.RandomNumberActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
-        <activity android:name=".Views.p4_HistoryNumber.Activity.HistoryNumberActivity"
+        <activity android:name="kr.co.example.lotto365_mvp.Views.p4_HistoryNumber.Activity.HistoryNumberActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden"/>
 
         <service
-            android:name=".MiniFrameWork.FCM.MessagingService"
+            android:name="kr.co.example.lotto365_mvp.MiniFrameWork.FCM.MessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

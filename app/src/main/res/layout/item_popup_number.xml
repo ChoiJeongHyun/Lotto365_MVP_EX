@@ -9,7 +9,7 @@
         android:layout_height="60dp"
         android:padding="6dp">
 
-        <kr.co.factoryx.lotto365_mvp.Widgets.CircleImageView
+        <kr.co.example.lotto365_mvp.Widgets.CircleImageView
             android:id="@+id/item_view_circle_popup_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

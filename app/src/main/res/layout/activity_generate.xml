@@ -7,7 +7,7 @@
     tools:context=".Views.p2_Main.Activity.MainActivity"
     android:background="@color/background_color">
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.ToolBar
+    <kr.co.example.lotto365_mvp.Widgets.ToolBar
         android:id="@+id/view_activity_generate_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbarHeight"

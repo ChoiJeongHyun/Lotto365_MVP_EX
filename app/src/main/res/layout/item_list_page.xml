@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.RoundButton
+    <kr.co.example.lotto365_mvp.Widgets.RoundButton
         android:id="@+id/item_view_btn_list_page"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -17,7 +17,7 @@
         app:textColorNormal="#9AA2B3"
         android:visibility="visible"/>
 
-    <kr.co.factoryx.lotto365_mvp.Widgets.ShadowView
+    <kr.co.example.lotto365_mvp.Widgets.ShadowView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="26dp"
